@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícia Todo Dia</title>
+    <link rel="shortcut icon" href="assets/global.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold fs-4" href="index.html"><img src="assets/global.png" alt=""> Notícia
+                Todo Dia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal"
+                aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarPrincipal">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Início</a>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link">Mundo</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Tecnologia</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Esportes</a></li>
+                </ul>
+                <img src="assets/search.png" alt="">
+                <form class="d-flex me-2" role="search">
+                    <input type="search" class="form-control navbar-search ms-2" placeholder="Pesquisar..."
+                        aria-label="Pesquisar">
+                </form>
+                <div class="d-flex gap-2 mt-2 mt-lg-0">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                        data-bs-target="#modalLogin">
+                        Login
+                    </button>
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                        data-bs-target="#modalLogin">Crie uma conta!</button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- AREA DE DESTAQUE -->
+    <div class="container">
+        <div class="col-md-8 g-5 me-1 row mb-2 w-100 mt-5 mx-auto">
+            <div
+                class="row g-0 border rounded overflow-hidden flex-column flex-md-row mb-4 shadow-sm position-relative">
+                <div class="col-md-6 p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success">Esportes</strong>
+                    <h3 class="mb-0">Hexa vindo ai!?</h3>
+                    <div class="mb-1 text-muted">Junho 21</div>
+                    <p class="mb-auto">Ancelotti confirma tática de jogo em colocar Endrick apenas para jogar em
+                        partidas decisivas.</p>
+                    <div><a href="#" class="btn btn-outline-primary btn-sm mt-2">Saiba mais</a></div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <svg class="bd-placeholder-img w-100 h-100" style="min-height: 250px;" xmlns="http://w3.org"
+                        role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                        focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect>
+                        <image
+                            href="https://lncimg.lance.com.br/cdn-cgi/image/width=1280,height=720,quality=75,background=white,fit=pad/uploads/2019/04/09/5cad2136404ad.png"
+                            width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CARDS E ASIDE -->
+    <main class="container">
+        <div class="row g-4">
+            <section class="col-lg-8">
+                <h2 class="mb-4 fw-bold">Últimas Notícias</h2>
+                <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://www.tnh1.com.br/variedades/wp-content/uploads/2026/04/CBF.jpg"
+                                class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <strong class="text-success small mb-1">Esportes</strong>
+                                <h5 class="card-title">Brasil treina forte para 2026</h5>
+                                <p class="card-text flex-grow-1 small">Seleção intensifica preparação para a Copa com
+                                    novos jogadores sendo avaliados pela comissão técnica.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm mt-2">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://www.gov.br/inpe/pt-br/assuntos/ultimas-noticias/nota-tecnica-conjunta-aponta-alta-probabilidade-de-el-nino-no-segundo-semestre-de-2026/el-nino-maio.png/@@images/9c694787-ed91-401a-91ad-804b7e071e2c.png"
+                                class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <strong class="text-success small mb-1">Mundo</strong>
+                                <h5 class="card-title">Super El Niño já tem previsão de chegada</h5>
+                                <p class="card-text flex-grow-1 small">O primeiro episódio de chuva intensa associado ao
+                                    El Niño em 2026 já tem data para começar. Segundo a Meteorologia, a instabilidade
+                                    deve ganhar força nos próximos dias;</p>
+                                <a href="" class="btn btn-outline-primary btn-sm mt-2">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://brasildefato.com.br/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-26-at-10.48.52.webp"
+                                class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <strong class="text-success small mb-1">Tecnologia</strong>
+                                <h5 class="card-title">IA's transformam o mercado de trabalho</h5>
+                                <p class="card-text flex-grow-1 small">Novas ferramentas com a utilização de
+                                    inteligência artificial estão sendo adotadas por empresas para automatizar tarefas
+                                    cotidianas.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm mt-2">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://cdn.evg.gov.br/cursos/1153_EVG/imagem_curso_1153.png"
+                                class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <strong class="text-success small mb-1">Tecnologia</strong>
+                                <h5 class="card-title">Ataques cibernéticos acendem alerta sobre segurança</h5>
+                                <p class="card-text flex-grow-1 small">Especialistas reforçam a importância de senhas
+                                    fortes e autenticação em duas etapas após o aumento de golpes e vazamento de
+                                    informações de usuários na rede.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm mt-2">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SZd8F3Eet-p41rQzSwMvOmXWHElCnIGNTA&s"
+                                class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <strong class="text-success small mb-1">Mundo</strong>
+                                <h5 class="card-title">Energia limpa se torna essencial</h5>
+                                <p class="card-text flex-grow-1 small">Países aumentam os investimentos em energia solar
+                                    e eólica para tentar reduzir a poluição e os impactos do aquecimento global.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm mt-2">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://s2-oglobo.glbimg.com/1iGrmAGtg6XKpo4rcyEG_9wKN78=/0x0:1920x1080/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/2/B/a3xnqES9i8TUpOnYVwTQ/headeresporteapostasfutebol-1-.jpg"
+                                class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <strong class="text-success small mb-1">Esportes</strong>
+                                <h5 class="card-title">Propaganda de Bets aumentam</h5>
+                                <p class="card-text flex-grow-1 small">Com o crescimento de transmissões ao vivo das
+                                    partidas de futebol canais grandes dependem de apoio financeiro através do anúncio
+                                    de bets.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm mt-2">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside class="col-lg-4">
+                <div class="bg-light p-4 rounded mb-3 mt-5">
+                    <h2>Notícias Mais Lidas</h2>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item bg-transparent"><a href="" class="text-decoration-none">Hexa vindo
+                                ai!?</a></li>
+                        <li class="list-group-item bg-transparent"><a href="" class="text-decoration-none">Super El Niño
+                                já tem previsão de chegada</a></li>
+                        <li class="list-group-item bg-transparent"><a href="" class="text-decoration-none">Propaganda de
+                                bets aumentam</a></li>
+                    </ol>
+                </div>
+                <div class="bg-light p-4 rounded mt-5">
+                    <h4 class="mb-3">Assinar Newsletter</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="sideEmail" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="sideEmail" placeholder="email@email.com">
+                        </div>
+                        <button type="button" class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                </div>
+                <div class="bg-light p-4 rounded mt-5">
+                    <h2>Categorias</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent"><a href="" class="text-decoration-none">🥅
+                                Futebol</a></li>
+                        <li class="list-group-item bg-transparent"><a href="" class="text-decoration-none">🌐
+                                Tecnologia</a></li>
+                        <li class="list-group-item bg-transparent"><a href="" class="text-decoration-none">⛰️
+                                Natureza</a></li>
+                        <li class="list-group-item bg-transparent"><a href="" class="text-decoration-none">🏀
+                                Basquete</a></li>
+                        <li class="list-group-item bg-transparent"><a href="" class="text-decoration-none">💵
+                                Financeiro</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="blog-footer mt-5 bg-dark text-white text-white">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Portal</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Início</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sobre Nós</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contato</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Anuncie</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Legal</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link p-0 text-body-secondary">Privacidade</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Termos de
+                                    Uso</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Assine a nossa newsletter</h5>
+                            <p>Notícia todo dia em um só lugar.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
+                                    class="visually-hidden">email@email.com</label> <input id="newsletter1" type="email"
+                                    class="form-control" placeholder="email@email.com"> <button class="btn btn-primary"
+                                    type="button">Assinar</button> </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>© 2026, Notícia Todo Dia. Todos os direitos reservados.</p>
+                    <ul class="list-unstyled d-flex gap-3 mb-0">
+                        <li><img src="assets/social.png" alt=""><a class="text-body-secondary text-decoration-none"
+                                href="#" aria-label="Instagram"> Instagram</a></img></li>
+                        <li><img src="assets/facebook.png" alt=""><a class="text-body-secondary text-decoration-none"
+                                href="#" aria-label="Facebook"> Facebook</a></img></li>
+                        <li><img src="assets/twitter.png" alt=""><a class="text-body-secondary text-decoration-none"
+                                href="#" aria-label="Twitter"> Twitter</a></img></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog"
+            id="modalSignin">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                        <h1 class="fw-bold mb-0 fs-2">Entrar na conta</h1> <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-5 pt-0">
+                        <form class="">
+                            <div class="form-floating mb-3"> <input type="email" class="form-control rounded-3"
+                                    id="floatingInput" placeholder="email@email.com"> <label
+                                    for="floatingInput">Endereço de e-mail</label> </div>
+                            <div class="form-floating mb-3"> <input type="password" class="form-control rounded-3"
+                                    id="floatingPassword" placeholder="Senha"> <label
+                                    for="floatingPassword">Senha</label> </div> <button
+                                class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Entrar</button>
+                            <small class="text-body-secondary">Ao clicar em Entrar, você concorda com os termos de
+                                uso.</small>
+                            <hr class="my-4">
+                            <h2 class="fs-5 fw-bold mb-3">Ou acesse com</h2>
+                            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="button">
+                                <img src="assets/google.png" alt=""> Entrar com Google</img>
+                            </button>
+                            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="button">
+                                <img src="assets/facebook.png" alt=""> Entrar com Facebook</img>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
